@@ -11,11 +11,11 @@
     <div class="main">
     <span >Grid</span>
     <div class="grid-container" >
-        <div id="grid_1" onclick="myFunction" class="grid-item">1</div>
-        <div id="grid_2" onclick="color_change_2" class="grid-item">2</div>
-        <div id="grid_3" onclick="color_change_3" class="grid-item">3</div>
-        <div id="grid_4" onclick="color_change_4" class="grid-item">4</div>
-        <div id="grid_5" onclick="color_change_5" class="grid-item">5</div>
+        <div onclick="myFunction_1" id="grid_1" class="grid-item">1</div>
+        <div id="grid_2" onclick="myFunction_2" class="grid-item">2</div>
+        <div id="grid_3" onclick="myFunction_3" class="grid-item">3</div>
+        <div id="grid_4" onclick="myFunction_4" class="grid-item">4</div>
+        <div id="grid_5" onclick="myFunction_5" class="grid-item">5</div>
         <div class="grid-item">6</div>
         <div class="grid-item">7</div>
         <div class="grid-item">8</div>
@@ -43,6 +43,12 @@
         <div class="grid-item">30</div>
     </div> 
 </div>
-<script src="grid.js"></script>
+<script>
+    function myFunction_1 () {
+        document.getElementById("grid_1").style.backgroundColor = "red";
+        console.log("clicked")
+    }
+</script>
+<!-- <script src="grid.js"></script> -->
 </body>
 </html>
